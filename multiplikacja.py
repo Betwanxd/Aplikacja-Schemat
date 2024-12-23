@@ -36,8 +36,8 @@ def process_images_in_directory(input_directory, output_directory):
             process_image(input_path, output_path_prefix)
 
 # Przykład użycia
-input_dir = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/Dioda' 
-output_dir = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/Dioda_rotate' 
+input_dir = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/Dioda_pierwowzor' 
+output_dir = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/Dioda' 
 
 # Przetwórz wszystkie obrazy w folderze
 process_images_in_directory(input_dir, output_dir)
