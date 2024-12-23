@@ -4,8 +4,8 @@ import os
 # Funkcja do obrócenia obrazu o 90 stopni i zapisania go w nowym pliku
 def rotate_and_save(img, output_path_prefix, rotation_number):
     rotated_img = img.rotate(90 * rotation_number, expand=True)  # Obracamy o 90 stopni
-    rotated_img.save(f"{output_path_prefix}_rotation_{rotation_number * 90}.jpg")
-    print(f"Obraz zapisano jako: {output_path_prefix}_rotation_{rotation_number * 90}.jpg")
+    rotated_img.save(f"{output_path_prefix}_rotation_{rotation_number * 90}.png")
+    print(f"Obraz zapisano jako: {output_path_prefix}_rotation_{rotation_number * 90}.png")
 
 # Funkcja do przetworzenia obrazu - obrót + odbicia
 def process_image(input_path, output_path_prefix):
