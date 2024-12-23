@@ -4,7 +4,17 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 from tensorflow.keras import layers, models
 
 # Ścieżka do folderu z danymi
-dataset_path = "path_to_your_dataset"  # Zmień to na ścieżkę do folderu z danymi
+dataset_path = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych'
+print("Sprawdzam istnienie folderu:", os.path.exists(dataset_path))
+dataset_path = dataset_path.encode('utf-8')
+dataset_path = str(dataset_path)
+
+
+
+if os.path.isdir(dataset_path):
+    print(f"Ścieżka {dataset_path} istnieje.")
+else:
+    print(f"Ścieżka {dataset_path} nie istnieje!")
 
 # Wczytanie zbioru danych
 train_dataset = image_dataset_from_directory(

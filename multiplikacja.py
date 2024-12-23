@@ -36,8 +36,16 @@ def process_images_in_directory(input_directory, output_directory):
             process_image(input_path, output_path_prefix)
 
 # Przykład użycia
-input_dir = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/Dioda_pierwowzor' 
-output_dir = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/Dioda' 
+input_dir_dioda = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/dioda_pierwowzor' 
+output_dir_dioda = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/dioda' 
+
+input_dir_rezystor = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/rezystor_pierwowzor' 
+output_dir_rezystor = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/rezystor' 
+
+input_dir_zrodlo_zasilania = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/zrodlo_zasilania_pierwowzor' 
+output_dir_zrodlo_zasilania = 'C:/Users/Konrad/Desktop/Schemat_Baza_Danych/zrodlo_zasilania' 
 
 # Przetwórz wszystkie obrazy w folderze
-process_images_in_directory(input_dir, output_dir)
+process_images_in_directory(input_dir_dioda, output_dir_dioda)
+process_images_in_directory(input_dir_rezystor, output_dir_rezystor)
+process_images_in_directory(input_dir_zrodlo_zasilania, output_dir_zrodlo_zasilania)
